@@ -73,7 +73,7 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 * Explore page -> detailed books view -> add books to profile
 
 ## Wireframes
-<img src="https://i.imgur.com/g1gQGbU.jpg" width=600>
+<img src="https://i.imgur.com/vSGWOsw.jpg" width=600>
 
 
 
