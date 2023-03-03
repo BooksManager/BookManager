@@ -1,20 +1,129 @@
-# BRAINSTORM
+Original App Design Project - README
+===
 
-1. Github Profile Information
-    - Github provides a lot of public information about a user that will be useful to pull.
-    - Would need a backend to persist users to save github token
-    - Functionality would be to allow user to see information on repositories like contributers
-    - Main idea: count the number of characters for each programming language and show a graph showing how much a github user uses a specific language
+# BooksManager
 
-2. CS Teammate matcher
-    - Having an app that can help CS students find teammates for their project for specific class.
-    - This will need a back-end database that'll be use to store the user detail and project detail
-    - Main function will be matching students with different skillset needed for a project, such as matching a front-end person with a back-end student
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
 
-3. Books tracking app
-    - Keeping track of books read and store in database
-    - Display information about current books
-    - Marking pages on books
-    - Can pull book information from APIs
+## Overview
+### Description
+With so many books read also comes unused or thrown away bookmarks. Our app BooksManager is an app that will allow for readers to save their space in their books without having so spend so much on tassles or have to produce waste through the use of bookmarks. Also, we plan to also help readers discover new books in an explore section.
 
-Choice: Option 3 (Books tracking app)
+### App Evaluation
+[Evaluation of your app across the following attributes]
+- **Category:** Books/Readers
+- **Mobile:** This app would primarily be developed for mobile but could also be viable on a computer.
+- **Story:** Allows users to log and view information about the books they are reading
+- **Market:** Individuals that reads and would like to log or keep track of their books in an app.
+- **Habit:** This app can be used however frequently the user wants to keep track of their spot in the book they are reading
+- **Scope:** We would first start with keeping track of the books that the users are currently reading then expand to allowing them to search and explore other books.
+
+## Product Spec
+
+### 1. User Stories (Required and Optional)
+
+**Required Must-have Stories**
+* As a user, I want to be able to sign up an account for the app.
+* As a user, I want to be able to login with my existing account
+* As a user, I want to be able to add books into my collection
+* As a user, I want to be able to place a book mark in the book I'm reading
+* As a user, I would like to be able to view my books in a list
+* As a user, I would like to be able to view information about my books
+* As a user, I would like to explore books based off of a search that looks at a book's category
+* As a user, I would like to see my profile information and books read
+
+**Optional Nice-to-have Stories**
+
+* Animation when user loads access certain resources
+* Books suggestions based on current books read
+* Edit name/username/password
+* Delete account
+
+### 2. Screen Archetypes
+
+* Log in/sign up page
+   * As a user, I want to be able to sign up an account for the app.
+    * As a user, I want to be able to login with my existing account
+* Books Page
+    * As a user, I would like to be able to view my books in a list
+    * As a user, I would like to be able to view information about my books
+    * As a user, I want to be able to place a book mark in the book I'm reading
+    * As a user, I want to be able to add books into my collection
+* Explore page
+    * As a user, I would like to explore books based off of a search that looks at a book's category
+* Profile/Settings page
+   * As a user, I would like to see my profile information and books read
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+* Books view
+* Explore page
+* Profiles view
+
+**Flow Navigation** (Screen to Screen)
+
+* Log in -> sign up if no log in is available
+* Books collection view -> detailed books view -> can add or edit books
+* Explore page -> detailed books view -> add books to profile
+
+## Wireframes
+<img src="https://i.imgur.com/g1gQGbU.jpg" width=600>
+
+
+
+
+
+### [BONUS] Digital Wireframes & Mockups
+**Log In**
+
+![](https://i.imgur.com/o3EMIF1.png)
+
+**Sign Up**
+
+![](https://i.imgur.com/E7y2VzO.png)
+
+**Book Collection**
+
+![](https://i.imgur.com/u6uNJ9t.png)
+
+**Collection Detail View**
+
+![](https://i.imgur.com/eXQRFbh.png)
+
+**Explore**
+
+![](https://i.imgur.com/WQOC03h.png)
+
+**Explore Detail View**
+
+![](https://i.imgur.com/pCuh3JA.png)
+
+**Profile**
+
+![](https://i.imgur.com/WPGlOtB.png)
+
+
+### [BONUS] Interactive Prototype
+
+![](https://i.imgur.com/yLrDqyf.gif)
+
+
+
+
+## Schema 
+[This section will be completed in Unit 9]
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
+
