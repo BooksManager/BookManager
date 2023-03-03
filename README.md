@@ -74,3 +74,7 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 
 ## Wireframes
 <img src="https://i.imgur.com/mmjDTiT.jpg" width=600>
+
+## Prototype GIF
+<img src='figma_demo.gif' title='Video Walkthrough' width='500px' alt='Video Walkthrough' />
+
