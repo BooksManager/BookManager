@@ -73,8 +73,57 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 * Explore page -> detailed books view -> add books to profile
 
 ## Wireframes
-<img src="https://i.imgur.com/mmjDTiT.jpg" width=600>
+<img src="https://i.imgur.com/g1gQGbU.jpg" width=600>
 
-## Prototype GIF
-<img src='figma_demo.gif' title='Video Walkthrough' width='500px' alt='Video Walkthrough' />
+
+
+
+
+### [BONUS] Digital Wireframes & Mockups
+**Log In**
+
+![](https://i.imgur.com/o3EMIF1.png)
+
+**Sign Up**
+
+![](https://i.imgur.com/E7y2VzO.png)
+
+**Book Collection**
+
+![](https://i.imgur.com/u6uNJ9t.png)
+
+**Collection Detail View**
+
+![](https://i.imgur.com/eXQRFbh.png)
+
+**Explore**
+
+![](https://i.imgur.com/WQOC03h.png)
+
+**Explore Detail View**
+
+![](https://i.imgur.com/pCuh3JA.png)
+
+**Profile**
+
+![](https://i.imgur.com/WPGlOtB.png)
+
+
+### [BONUS] Interactive Prototype
+
+![](https://i.imgur.com/yLrDqyf.gif)
+
+
+
+
+## Schema 
+[This section will be completed in Unit 9]
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
 
