@@ -46,18 +46,22 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 ### 2. Screen Archetypes
 
 * Log in/sign up page
-   * As a user, I want to be able to sign up an account for the app.
-    * As a user, I want to be able to login with my existing account
-* Books Page
-    * As a user, I would like to be able to view my books in a list
-    * As a user, I would like to be able to view information about my books
-    * As a user, I want to be able to place a book mark in the book I'm reading
-    * As a user, I want to be able to add books into my collection
+   - [x] As a user, I want to be able to sign up an account for the app.
+   - [x] As a user, I want to be able to login with my existing account
+* Books CollectionPage
+  - [ ] As a user, I would like to be able to view my books in a list
+* Book Details
+  - [ ] As a user, I would like to be able to view information about my books
+  - [ ] As a user, I want to be able to place a book mark in the book I'm reading
+  - [ ] As a user, I want to be able to add books into my collection
+  - [ ] User can remove a book from their collection, which will delete all information regarding the book
 * Explore page
-    * As a user, I would like to explore books based off of a search that looks at a book's category
+    - [ ] User can search for books on the search bar
+    - [ ] User can see the results of their search on the explore page
+    - [ ] User can view a detailed page of the book they select from the result
 * Profile/Settings page
-   * As a user, I would like to see my profile information and books read
-
+   - [ ] User can view their info
+   - [ ] User can see what they've read
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
