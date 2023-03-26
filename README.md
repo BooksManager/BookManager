@@ -117,7 +117,9 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 
 ![](https://i.imgur.com/yLrDqyf.gif)
 
-
+### Progress Update
+Login and Signup </br>
+![](https://github.com/BooksManager/BookManager/blob/main/loginsignup.gif)
 
 
 ## Schema 
