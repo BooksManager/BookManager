@@ -6,17 +6,37 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private enum Constants {
+            static let loginNavigationControllerIdentifier = "LoginNavigationController"
+            static let tabBarControllerIdentifier = "TabbarController"
+            static let mainIdentifier = "Main"
+        }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name("login"), object: nil, queue: OperationQueue.main) { [weak self] _ in
+            self?.login()
+        }
+        
+        if Firebase.Auth.auth().currentUser != nil {
+            self.login();
+        }
+        
+    }
+    
+    func login() {
+        let storyboard = UIStoryboard(name: Constants.mainIdentifier, bundle: nil)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.tabBarControllerIdentifier)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

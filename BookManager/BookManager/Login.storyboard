@@ -109,6 +109,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                                <connections>
+                                                    <action selector="handleLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8IK-Uf-MAL"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-c4-p3T">
                                                 <rect key="frame" x="0.0" y="236.00000000000006" width="264" height="34.333333333333314"/>

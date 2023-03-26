@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -20,6 +21,46 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         emailField.delegate = self;
         passwordField.delegate = self;
+    }
+    
+    
+    @IBAction func handleLogin(_ sender: Any) {
+        guard let email = emailField.text,
+              let password = passwordField.text else {
+            let alert = UIAlertController(title: "Error",
+                                          message: "An error occured, please try again",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK",
+                                          style: .default,
+                                          handler: { _ in
+                 print("OK tap")
+            }))
+            self.present(alert, animated: true, completion: nil);
+            return;
+        }
+        Firebase.Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error != nil {
+                let alert = UIAlertController(title: "Login Error",
+                                              message: "Incorrect email or password",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK",
+                                              style: .default,
+                                              handler: { _ in
+                     print("OK tap")
+                }))
+                self.present(alert, animated: true, completion: nil);
+            }
+            
+            guard let res = result else {
+                print("Error occurred while logging in");
+                return;
+            }
+            
+            print("Signed in as \(res.user.email)");
+            NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+            
+        }
+        
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

@@ -114,6 +114,11 @@
                                                                 <rect key="frame" x="0.0" y="28.333333333333371" width="273" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                                        <color key="value" red="0.36470588240000001" green="0.69411764710000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -128,7 +133,10 @@
                                                 <color key="backgroundColor" red="0.36470588240000001" green="0.69411764710000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Signup"/>
+                                                <connections>
+                                                    <action selector="handleSignup:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Rve-oG-9eN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -158,6 +166,11 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DhI-FK-AgV" secondAttribute="bottom" constant="40" id="xY6-Tg-nXT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="7De-pc-nbj" id="JAK-fl-hHP"/>
+                        <outlet property="passwordField" destination="L9p-ip-Bn4" id="avb-rq-6uQ"/>
+                        <outlet property="unameField" destination="R1r-89-Mz9" id="wqu-dn-lo0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
