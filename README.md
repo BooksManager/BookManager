@@ -60,7 +60,7 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
     - [ ] User can see the results of their search on the explore page
     - [ ] User can view a detailed page of the book they select from the result
 * Profile/Settings page
-   - [ ] User can view their info
+   - [x] User can view their info
    - [ ] User can see what they've read
 ### 3. Navigation
 
