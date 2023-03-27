@@ -55,8 +55,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="EmailLabel" destination="kNi-Zw-O0Q" id="iTx-9H-nfT"/>
-                        <outlet property="NamsLabel" destination="HTk-cp-cKD" id="1eF-Nc-Bj4"/>
+                        <outlet property="EmailLabel" destination="kNi-Zw-O0Q" id="yNa-Tm-Ozg"/>
+                        <outlet property="NamsLabel" destination="HTk-cp-cKD" id="UnL-JN-tuE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
