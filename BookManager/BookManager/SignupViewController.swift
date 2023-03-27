@@ -74,13 +74,15 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                 return;
             }
             
-            let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-            changeRequest?.displayName = self.unameField.text;
-            changeRequest?.commitChanges { (error) in
-                print("Error with creating username")
+            let changeRequest = res.user.createProfileChangeRequest()
+            changeRequest.displayName = String(describing: self.unameField.text!);
+            changeRequest.commitChanges { (error) in
+                if let error = error {
+                    print("Error with creating username\(error.localizedDescription)")
+                }
+                print("Signed up user as \(res.user.email!)");
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
             }
-            print("Signed up user as \(res.user.email)");
-            NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField) {

@@ -27,7 +27,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         NotificationCenter.default.addObserver(forName: Notification.Name("login"), object: nil, queue: OperationQueue.main) { [weak self] _ in
             self?.login()
         }
-        
+        do {
+           try Firebase.Auth.auth().signOut()
+        }
+        catch {
+            
+        }
         if Firebase.Auth.auth().currentUser != nil {
             self.login();
         }
