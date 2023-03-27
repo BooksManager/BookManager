@@ -22,6 +22,65 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-rn-drM">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BooksTableViewCell" rowHeight="153" id="5Od-Dw-Lxc" customClass="BooksTableViewCell" customModule="BookManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="153"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Od-Dw-Lxc" id="siQ-OR-1rd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="153"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-aspect.scaled.to.fill-50x50-.png" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-3N-bk9">
+                                                            <rect key="frame" x="20" y="10" width="133" height="133"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="I4b-3N-bk9" secondAttribute="height" multiplier="50:50" id="PAv-DO-2S2"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-ev-anT">
+                                                            <rect key="frame" x="179" y="11" width="33" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="qweqweqw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrE-XL-iJs">
+                                                            <rect key="frame" x="235" y="12" width="86" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylk-ce-Nap">
+                                                            <rect key="frame" x="179" y="40" width="46" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adasdasdasdasdasdasdas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0I-aG-KZX">
+                                                            <rect key="frame" x="179" y="65" width="201" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="M0I-aG-KZX" firstAttribute="leading" secondItem="I4b-3N-bk9" secondAttribute="trailing" constant="26" id="7a2-Vl-ziK"/>
+                                                        <constraint firstItem="I4b-3N-bk9" firstAttribute="leading" secondItem="siQ-OR-1rd" secondAttribute="leading" constant="20" symbolic="YES" id="AS1-x2-nIj"/>
+                                                        <constraint firstItem="Ylk-ce-Nap" firstAttribute="top" secondItem="m4M-ev-anT" secondAttribute="bottom" constant="8" symbolic="YES" id="KcJ-7M-Myl"/>
+                                                        <constraint firstItem="M0I-aG-KZX" firstAttribute="top" secondItem="Ylk-ce-Nap" secondAttribute="bottom" constant="4" id="PgJ-aL-uQA"/>
+                                                        <constraint firstItem="Ylk-ce-Nap" firstAttribute="leading" secondItem="I4b-3N-bk9" secondAttribute="trailing" constant="26" id="WXe-tO-T5y"/>
+                                                        <constraint firstItem="m4M-ev-anT" firstAttribute="leading" secondItem="I4b-3N-bk9" secondAttribute="trailing" constant="26" id="XRT-Os-PBW"/>
+                                                        <constraint firstItem="m4M-ev-anT" firstAttribute="top" secondItem="siQ-OR-1rd" secondAttribute="topMargin" id="pp0-M8-cCM"/>
+                                                        <constraint firstItem="I4b-3N-bk9" firstAttribute="top" secondItem="siQ-OR-1rd" secondAttribute="top" constant="10" id="xBF-DS-JXg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="I4b-3N-bk9" secondAttribute="bottom" constant="10" id="zWa-CV-DzZ"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="des" destination="M0I-aG-KZX" id="LP2-tB-EeI"/>
+                                                    <outlet property="title" destination="XrE-XL-iJs" id="goZ-ZY-Iwe"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -63,6 +122,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple-aspect.scaled.to.fill-50x50-.png" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
