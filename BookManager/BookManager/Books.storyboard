@@ -19,17 +19,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-3n-fha">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-2k-6tU">
-                                        <rect key="frame" x="98" y="338" width="239" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Temporary Rerouting Button"/>
-                                        <connections>
-                                            <segue destination="K39-bG-xNv" kind="show" id="Coy-3s-28n"/>
-                                        </connections>
-                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-rn-drM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="nO7-rn-drM" firstAttribute="leading" secondItem="CMT-3n-fha" secondAttribute="leading" id="TmG-ci-rth"/>
+                                    <constraint firstAttribute="bottom" secondItem="nO7-rn-drM" secondAttribute="bottom" id="V4D-Wv-8lH"/>
+                                    <constraint firstItem="nO7-rn-drM" firstAttribute="top" secondItem="CMT-3n-fha" secondAttribute="top" id="dbZ-qL-ReY"/>
+                                    <constraint firstAttribute="trailing" secondItem="nO7-rn-drM" secondAttribute="trailing" id="k7e-BF-zO4"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -42,12 +43,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BooksTableView" destination="nO7-rn-drM" id="Vmq-PF-pKa"/>
                         <segue destination="K39-bG-xNv" kind="show" id="ttm-37-vUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="18"/>
+            <point key="canvasLocation" x="-45.038167938931295" y="17.605633802816904"/>
         </scene>
         <!--BookDetails-->
         <scene sceneID="lsV-Xf-3Ok">
@@ -60,9 +62,6 @@
             <point key="canvasLocation" x="875" y="-31"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ttm-37-vUF"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
