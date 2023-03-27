@@ -8,20 +8,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="BookManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPH-zk-bff">
+                                <rect key="frame" x="57" y="449" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="displayName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTk-cp-cKD">
+                                <rect key="frame" x="117" y="395" width="98.333333333333314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userEmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNi-Zw-O0Q">
+                                <rect key="frame" x="113" y="449" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzx-3R-oF0">
+                                <rect key="frame" x="57" y="395" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kNi-Zw-O0Q" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="33.5" id="FaU-VS-y3W"/>
+                            <constraint firstItem="HTk-cp-cKD" firstAttribute="leading" secondItem="hzx-3R-oF0" secondAttribute="trailing" constant="10" id="ITU-9m-b1R"/>
+                            <constraint firstItem="HTk-cp-cKD" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-20.5" id="K36-72-tvs"/>
+                            <constraint firstItem="hzx-3R-oF0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-20.5" id="QsU-A0-Gh4"/>
+                            <constraint firstItem="mPH-zk-bff" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="33.5" id="TlJ-dT-wJR"/>
+                            <constraint firstItem="hzx-3R-oF0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-114.5" id="VfG-fZ-1l1"/>
+                            <constraint firstItem="kNi-Zw-O0Q" firstAttribute="leading" secondItem="mPH-zk-bff" secondAttribute="trailing" constant="10" id="e8S-LJ-27n"/>
+                            <constraint firstItem="mPH-zk-bff" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-116.5" id="zOo-KO-x69"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EmailLabel" destination="kNi-Zw-O0Q" id="iTx-9H-nfT"/>
+                        <outlet property="NamsLabel" destination="HTk-cp-cKD" id="1eF-Nc-Bj4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
