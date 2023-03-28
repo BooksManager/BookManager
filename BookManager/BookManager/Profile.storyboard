@@ -12,35 +12,35 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="BookManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPH-zk-bff">
-                                <rect key="frame" x="60.666666666666657" y="934" width="46" height="21"/>
+                                <rect key="frame" x="60.666666666666657" y="460" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="displayName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTk-cp-cKD">
-                                <rect key="frame" x="147.33333333333334" y="891" width="98.333333333333343" height="21"/>
+                                <rect key="frame" x="147.33333333333334" y="417" width="98.333333333333343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzx-3R-oF0">
-                                <rect key="frame" x="58.666666666666671" y="893" width="49.666666666666671" height="21"/>
+                                <rect key="frame" x="58.666666666666671" y="419" width="49.666666666666671" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books I've Read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egS-W4-g4E">
-                                <rect key="frame" x="125" y="973" width="143" height="23"/>
+                                <rect key="frame" x="125" y="499" width="143" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFI-gu-EbP">
-                                <rect key="frame" x="0.0" y="1006" width="393" height="760"/>
+                                <rect key="frame" x="0.0" y="532" width="393" height="286"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-Un-h7C">
                                         <rect key="frame" x="0.0" y="0.0" width="396" height="1000"/>
@@ -77,7 +77,7 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userEmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNi-Zw-O0Q">
-                                <rect key="frame" x="159.66666666666666" y="932" width="74" height="21"/>
+                                <rect key="frame" x="159.66666666666666" y="458" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -103,7 +103,6 @@
                             <constraint firstItem="kNi-Zw-O0Q" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="42.5" id="tOD-4E-IBX"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="393" height="1800"/>
                     <connections>
                         <outlet property="BooksRead" destination="afK-7d-YFi" id="BBY-U3-Feb"/>
                         <outlet property="EmailLabel" destination="kNi-Zw-O0Q" id="yNa-Tm-Ozg"/>
