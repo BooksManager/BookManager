@@ -61,7 +61,7 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
     - [ ] User can view a detailed page of the book they select from the result
 * Profile/Settings page
    - [x] User can view their info
-   - [ ] User can see what they've read
+   - [x] User can see what they've read
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
