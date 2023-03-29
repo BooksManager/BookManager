@@ -49,7 +49,7 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
    - [x] As a user, I want to be able to sign up an account for the app.
    - [x] As a user, I want to be able to login with my existing account
 * Books CollectionPage
-  - [ ] As a user, I would like to be able to view my books in a list
+  - [x] As a user, I would like to be able to view my books in a list
 * Book Details
   - [ ] As a user, I would like to be able to view information about my books
   - [ ] As a user, I want to be able to place a book mark in the book I'm reading
@@ -61,7 +61,7 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
     - [ ] User can view a detailed page of the book they select from the result
 * Profile/Settings page
    - [x] User can view their info
-   - [ ] User can see what they've read
+   - [x] User can see what they've read
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
