@@ -22,7 +22,7 @@ class BookDetailsViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UITextView!
     
-//    var book: Book!
+    var book: [String:Any] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,10 @@ class BookDetailsViewController: UIViewController {
         
         
 //        print(book.title)
-//        titleLabel.text = book.title
+        
+        titleLabel.text = book["Title"] as? String
+        authorLabel.text = book["Author"] as? String
+        descriptionLabel.text = book["Description"] as? String
 //        authorLabel.text = book.authors
 //        avgRatingLabel.text = String(book.averageRating)
 //        pagesLabel.text = String(book.pageCount)
