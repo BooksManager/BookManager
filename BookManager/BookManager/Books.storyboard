@@ -78,6 +78,7 @@
                                                 <connections>
                                                     <outlet property="des" destination="M0I-aG-KZX" id="LP2-tB-EeI"/>
                                                     <outlet property="title" destination="XrE-XL-iJs" id="goZ-ZY-Iwe"/>
+                                                    <segue destination="K39-bG-xNv" kind="show" id="Jbe-t0-CPG"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -103,7 +104,6 @@
                     </view>
                     <connections>
                         <outlet property="BooksTableView" destination="nO7-rn-drM" id="Vmq-PF-pKa"/>
-                        <segue destination="K39-bG-xNv" kind="show" id="ttm-37-vUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -22,7 +22,7 @@ class BookDetailsViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UITextView!
     
-    var book: Book!
+//    var book: Book!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +30,15 @@ class BookDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Set labels with the associated track values.
-        titleLabel.text = "Harry Potter"
-        authorLabel.text = "J.K. Rowling"
-        avgRatingLabel.text = "4.7"
-        pagesLabel.text = String(336)
-        languageLabel.text = "en"
-        descriptionLabel.text = "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches."
+//        titleLabel.text = "Harry Potter"
+//        authorLabel.text = "J.K. Rowling"
+//        avgRatingLabel.text = "4.7"
+//        pagesLabel.text = String(336)
+//        languageLabel.text = "en"
+//        descriptionLabel.text = "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches."
+        
+        
+        
         
 //        print(book.title)
 //        titleLabel.text = book.title
