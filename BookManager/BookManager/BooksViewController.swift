@@ -21,7 +21,7 @@ class BooksViewController: UIViewController,UITableViewDataSource, UITableViewDe
         BooksTableView.dataSource = self
         BooksTableView.delegate = self
         self.BooksTableView
-            .rowHeight = 100
+            .rowHeight = 200
         
         let ref = db.collection("Users").document("1TkF9w3QD0lp48IudQnM").collection("Books")
         let res = ref.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
