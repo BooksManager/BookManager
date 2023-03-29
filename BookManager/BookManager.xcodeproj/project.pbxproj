@@ -99,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				FC2FE66629D4C00A006EF8D0 /* Models */,
-				FC2FE66229D4BD01006EF8D0 /* ProfileViewController.swift */,
 				1D09073529C9170000162E10 /* AppDelegate.swift */,
 				1D09073729C9170000162E10 /* SceneDelegate.swift */,
 				1D09073929C9170000162E10 /* ViewController.swift */,
@@ -112,6 +111,7 @@
 				1D09074B29CBAB3200162E10 /* Signup.storyboard */,
 				1D1B4D5B29D0A4F1002458D1 /* SignupViewController.swift */,
 				1D09074D29CBB3F200162E10 /* Profile.storyboard */,
+				FC2FE66229D4BD01006EF8D0 /* ProfileViewController.swift */,
 				1D09074F29CBB40C00162E10 /* Books.storyboard */,
 				FCAB7F1929D120D40011C59F /* BooksViewController.swift */,
 				5C9B0E1829D1E914007EF8B0 /* BooksTableViewCell.swift */,
