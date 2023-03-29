@@ -155,6 +155,7 @@
                                     <constraint firstAttribute="width" constant="360" id="tMn-OY-VcO"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
+
                                 <color key="textColor" red="0.070588238540000001" green="0.05882352591" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -271,12 +272,16 @@
                         <outlet property="authorLabel" destination="uol-CK-VSg" id="unx-zx-obj"/>
                         <outlet property="avgRatingLabel" destination="6IR-fy-Tu2" id="Wh1-WF-SKG"/>
                         <outlet property="coverImage" destination="kff-rV-oJp" id="mP9-ZJ-wcx"/>
+
                         <outlet property="currentPageLabel" destination="8VL-ot-7f9" id="5HP-Sk-uLf"/>
+
                         <outlet property="descriptionLabel" destination="Dcl-Tw-Pny" id="pX6-r5-Aq5"/>
                         <outlet property="languageLabel" destination="JFO-Gq-iVz" id="Emw-Jj-pQ1"/>
                         <outlet property="pagesLabel" destination="bXA-Ey-9Q7" id="85t-ZH-94h"/>
                         <outlet property="titleLabel" destination="tAs-Qs-L5G" id="pup-55-xGb"/>
+
                         <outlet property="totalPagesLabel" destination="z9p-x5-fQP" id="D1f-Da-i1h"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
