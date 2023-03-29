@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Book Details View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="BookDetailsViewController" customModule="BookManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="tMn-OY-VcO"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" red="0.070588238540000001" green="0.05882352591" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -203,6 +203,15 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="S7N-Fg-PVh" secondAttribute="bottom" constant="72" id="zc9-zn-hie"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="uol-CK-VSg" id="unx-zx-obj"/>
+                        <outlet property="avgRatingLabel" destination="6IR-fy-Tu2" id="Wh1-WF-SKG"/>
+                        <outlet property="coverImage" destination="kff-rV-oJp" id="mP9-ZJ-wcx"/>
+                        <outlet property="descriptionLabel" destination="Dcl-Tw-Pny" id="pX6-r5-Aq5"/>
+                        <outlet property="languageLabel" destination="JFO-Gq-iVz" id="Emw-Jj-pQ1"/>
+                        <outlet property="pagesLabel" destination="bXA-Ey-9Q7" id="85t-ZH-94h"/>
+                        <outlet property="titleLabel" destination="tAs-Qs-L5G" id="pup-55-xGb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
