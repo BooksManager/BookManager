@@ -11,6 +11,8 @@ class BooksTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,9 +28,9 @@ class BooksTableViewCell: UITableViewCell {
     
     /// Configures the cell's UI for the given track.
     func configure(with book: [String: Any]) {
-//        titleLabel.text = book["Title"] as? String
-//        authorLabel.text = book["Author"] as? String
-//        descriptionLabel.text = book["Description"] as? String
+        titleLabel.text = book["Title"] as? String
+        authorLabel.text = book["Author"] as? String
+        descriptionLabel.text = book["Description"] as? String
 
 ////        // Load image async via Nuke library image loading helper method
 ////        Nuke.loadImage(with: URL(string: Movie.posterBaseURLString + movie.poster_path)! , into: posterImageView)
