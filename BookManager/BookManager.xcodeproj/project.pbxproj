@@ -28,8 +28,10 @@
 		1D1B4D6929D0ABB5002458D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1D1B4D6829D0ABB5002458D1 /* FirebaseAuth */; };
 		1D1B4D6B29D0ABB5002458D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1D1B4D6A29D0ABB5002458D1 /* FirebaseFirestore */; };
 		1D1B4D6D29D0ABB5002458D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1D1B4D6C29D0ABB5002458D1 /* FirebaseStorage */; };
-		5C9B0E1529D1DD2A007EF8B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9B0E1429D1DD2A007EF8B0 /* ProfileViewController.swift */; };
 		5C9B0E1929D1E914007EF8B0 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9B0E1829D1E914007EF8B0 /* BooksTableViewCell.swift */; };
+		FC2FE66329D4BD01006EF8D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FE66229D4BD01006EF8D0 /* ProfileViewController.swift */; };
+		FC2FE66529D4BFF2006EF8D0 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FE66429D4BFF2006EF8D0 /* BookDetailsViewController.swift */; };
+		FC2FE66729D4C00A006EF8D0 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = FC2FE66629D4C00A006EF8D0 /* Models */; };
 		FCAB7F1829D1020A0011C59F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCAB7F1729D1020A0011C59F /* GoogleService-Info.plist */; };
 		FCAB7F1A29D120D40011C59F /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAB7F1929D120D40011C59F /* BooksViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,8 +54,10 @@
 		1D09075529CBB58800162E10 /* ExploreBookDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreBookDetails.storyboard; sourceTree = "<group>"; };
 		1D1B4D5929D0A4D3002458D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1D1B4D5B29D0A4F1002458D1 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		5C9B0E1429D1DD2A007EF8B0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "../../../../Downloads/BookManager-main/BookManager/BookManager/ProfileViewController.swift"; sourceTree = "<group>"; };
 		5C9B0E1829D1E914007EF8B0 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
+		FC2FE66229D4BD01006EF8D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FC2FE66429D4BFF2006EF8D0 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		FC2FE66629D4C00A006EF8D0 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		FCAB7F1729D1020A0011C59F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCAB7F1929D120D40011C59F /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +98,8 @@
 		1D09073429C9170000162E10 /* BookManager */ = {
 			isa = PBXGroup;
 			children = (
+				FC2FE66629D4C00A006EF8D0 /* Models */,
+				FC2FE66229D4BD01006EF8D0 /* ProfileViewController.swift */,
 				1D09073529C9170000162E10 /* AppDelegate.swift */,
 				1D09073729C9170000162E10 /* SceneDelegate.swift */,
 				1D09073929C9170000162E10 /* ViewController.swift */,
@@ -102,17 +108,17 @@
 				1D09074029C9170100162E10 /* LaunchScreen.storyboard */,
 				1D09074329C9170100162E10 /* Info.plist */,
 				1D09074929CBAAC900162E10 /* Login.storyboard */,
+				1D1B4D5929D0A4D3002458D1 /* LoginViewController.swift */,
 				1D09074B29CBAB3200162E10 /* Signup.storyboard */,
+				1D1B4D5B29D0A4F1002458D1 /* SignupViewController.swift */,
 				1D09074D29CBB3F200162E10 /* Profile.storyboard */,
 				1D09074F29CBB40C00162E10 /* Books.storyboard */,
 				FCAB7F1929D120D40011C59F /* BooksViewController.swift */,
-				5C9B0E1429D1DD2A007EF8B0 /* ProfileViewController.swift */,
 				5C9B0E1829D1E914007EF8B0 /* BooksTableViewCell.swift */,
 				1D09075129CBB41800162E10 /* Explore.storyboard */,
 				1D09075329CBB57800162E10 /* BookDetails.storyboard */,
+				FC2FE66429D4BFF2006EF8D0 /* BookDetailsViewController.swift */,
 				1D09075529CBB58800162E10 /* ExploreBookDetails.storyboard */,
-				1D1B4D5929D0A4D3002458D1 /* LoginViewController.swift */,
-				1D1B4D5B29D0A4F1002458D1 /* SignupViewController.swift */,
 				FCAB7F1729D1020A0011C59F /* GoogleService-Info.plist */,
 			);
 			path = BookManager;
@@ -195,6 +201,7 @@
 				1D09074A29CBAAC900162E10 /* Login.storyboard in Resources */,
 				1D09074229C9170100162E10 /* LaunchScreen.storyboard in Resources */,
 				1D09073F29C9170100162E10 /* Assets.xcassets in Resources */,
+				FC2FE66729D4C00A006EF8D0 /* Models in Resources */,
 				1D09075029CBB40C00162E10 /* Books.storyboard in Resources */,
 				1D09074C29CBAB3200162E10 /* Signup.storyboard in Resources */,
 				FCAB7F1829D1020A0011C59F /* GoogleService-Info.plist in Resources */,
@@ -214,9 +221,10 @@
 				1D09073A29C9170000162E10 /* ViewController.swift in Sources */,
 				1D1B4D5C29D0A4F1002458D1 /* SignupViewController.swift in Sources */,
 				1D09073629C9170000162E10 /* AppDelegate.swift in Sources */,
+				FC2FE66529D4BFF2006EF8D0 /* BookDetailsViewController.swift in Sources */,
 				5C9B0E1929D1E914007EF8B0 /* BooksTableViewCell.swift in Sources */,
-				5C9B0E1529D1DD2A007EF8B0 /* ProfileViewController.swift in Sources */,
 				1D09073829C9170000162E10 /* SceneDelegate.swift in Sources */,
+				FC2FE66329D4BD01006EF8D0 /* ProfileViewController.swift in Sources */,
 				FCAB7F1A29D120D40011C59F /* BooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
