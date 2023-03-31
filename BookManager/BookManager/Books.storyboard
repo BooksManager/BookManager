@@ -91,6 +91,7 @@
                                                     <outlet property="authorLabel" destination="t2q-eT-6zc" id="wKC-ve-siK"/>
                                                     <outlet property="descriptionLabel" destination="YN3-KY-eht" id="nnO-FX-9Ao"/>
                                                     <outlet property="titleLabel" destination="x1c-Hd-7ZT" id="Vp4-hY-yJf"/>
+                                                    <segue destination="K39-bG-xNv" kind="show" id="NmZ-s0-ZaF"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

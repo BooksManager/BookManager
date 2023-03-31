@@ -54,7 +54,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m3h-Mz-yEP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="m3h-Mz-yEP">
                                 <rect key="frame" x="77" y="84" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="2vI-p7-xud"/>
@@ -67,28 +67,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFI-gu-EbP">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFI-gu-EbP">
                                 <rect key="frame" x="0.0" y="461.66666666666674" width="393" height="356.33333333333326"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-Un-h7C">
-                                        <rect key="frame" x="0.0" y="0.0" width="407.33333333333331" height="1000"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-Un-h7C">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="1000"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdasdasdasdasdasdasdasdasdasdasdasdasdasd" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afK-7d-YFi">
-                                                <rect key="frame" x="16" y="8" width="375.33333333333331" height="976"/>
-                                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFE-He-wtZ">
+                                                <rect key="frame" x="10" y="0.0" width="373" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="afK-7d-YFi" firstAttribute="leading" secondItem="EPW-Un-h7C" secondAttribute="leading" constant="16" id="0Fv-M6-pcf"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YFE-He-wtZ" secondAttribute="bottom" constant="5" id="1lj-0T-iE0"/>
                                             <constraint firstAttribute="height" constant="1000" id="J8F-eD-C7P"/>
-                                            <constraint firstAttribute="bottom" secondItem="afK-7d-YFi" secondAttribute="bottom" constant="16" id="KER-QQ-ZpI"/>
-                                            <constraint firstItem="afK-7d-YFi" firstAttribute="top" secondItem="EPW-Un-h7C" secondAttribute="top" constant="8" id="qQT-sz-D3U"/>
-                                            <constraint firstAttribute="trailing" secondItem="afK-7d-YFi" secondAttribute="trailing" constant="16" id="qTQ-eh-2Gs"/>
+                                            <constraint firstItem="YFE-He-wtZ" firstAttribute="top" secondItem="EPW-Un-h7C" secondAttribute="top" id="h4P-0z-tVl"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -111,16 +108,19 @@
                             <constraint firstItem="egS-W4-g4E" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Uff-60-IKR"/>
                             <constraint firstItem="i7Z-7I-smL" firstAttribute="top" secondItem="m3h-Mz-yEP" secondAttribute="bottom" constant="25" id="dxp-y4-T7u"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="m3h-Mz-yEP" secondAttribute="trailing" constant="76" id="fmc-nf-4gW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YFE-He-wtZ" secondAttribute="trailing" constant="10" id="hKJ-fn-8W6"/>
                             <constraint firstItem="oFI-gu-EbP" firstAttribute="top" secondItem="egS-W4-g4E" secondAttribute="bottom" constant="10" id="hzd-9f-c0C"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="i7Z-7I-smL" secondAttribute="trailing" constant="16" id="kSW-xO-b1Z"/>
                             <constraint firstItem="oFI-gu-EbP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="kas-qe-He1"/>
+                            <constraint firstItem="YFE-He-wtZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="n2r-LZ-UF5"/>
                             <constraint firstItem="m3h-Mz-yEP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="w3s-op-aJj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BooksRead" destination="afK-7d-YFi" id="BBY-U3-Feb"/>
+                        <outlet property="BooksRead" destination="YFE-He-wtZ" id="Nfe-Vi-x1R"/>
                         <outlet property="EmailLabel" destination="kNi-Zw-O0Q" id="yNa-Tm-Ozg"/>
                         <outlet property="NamsLabel" destination="HTk-cp-cKD" id="UnL-JN-tuE"/>
+                        <outlet property="profileImageView" destination="m3h-Mz-yEP" id="GDU-v9-ycB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,4 +128,7 @@
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DefaultProfile" width="225.33332824707031" height="228.66667175292969"/>
+    </resources>
 </document>
