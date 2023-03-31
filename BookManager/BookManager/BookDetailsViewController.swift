@@ -22,7 +22,14 @@ class BookDetailsViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UITextView!
     
-    var book: Book!
+
+    @IBOutlet weak var currentPageLabel: UILabel!
+    
+    @IBOutlet weak var totalPagesLabel: UILabel!
+    
+    
+    var book: [String:Any] = [:]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,20 +37,25 @@ class BookDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Set labels with the associated track values.
-        titleLabel.text = "Harry Potter"
-        authorLabel.text = "J.K. Rowling"
-        avgRatingLabel.text = "4.7"
-        pagesLabel.text = String(336)
-        languageLabel.text = "en"
-        descriptionLabel.text = "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches."
+//        titleLabel.text = "Harry Potter"
+//        authorLabel.text = "J.K. Rowling"
+//        avgRatingLabel.text = "4.7"
+//        pagesLabel.text = String(336)
+//        languageLabel.text = "en"
+//        descriptionLabel.text = "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches."
+        
+        
+        
         
 //        print(book.title)
-//        titleLabel.text = book.title
-//        authorLabel.text = book.authors
+        
+        titleLabel.text = book["Title"] as? String
+        authorLabel.text = book["Author"] as? String
+        descriptionLabel.text = book["Description"] as? String
 //        avgRatingLabel.text = String(book.averageRating)
 //        pagesLabel.text = String(book.pageCount)
 //        languageLabel.text = book.language
-//        descriptionLabel.text = book.description
+
 
         
     }
