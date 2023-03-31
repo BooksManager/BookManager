@@ -98,6 +98,9 @@ class ExploreBookDetailViewController: UIViewController {
             {
                 post["description"] = desc
             }
+
+            post["id"] = book.id
+           
             
             let db = Firestore.firestore()
             db.collection("user")

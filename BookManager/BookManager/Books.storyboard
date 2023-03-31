@@ -39,7 +39,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1c-Hd-7ZT">
-                                                            <rect key="frame" x="182" y="39.333333333333336" width="206" height="19.333333333333336"/>
+                                                            <rect key="frame" x="182" y="20.333333333333336" width="206" height="19.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="9U5-8p-Msr"/>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="S3N-fq-62s"/>
@@ -49,17 +49,17 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2q-eT-6zc">
-                                                            <rect key="frame" x="182" y="63.666666666666664" width="186" height="19.333333333333336"/>
+                                                            <rect key="frame" x="182" y="44.666666666666664" width="186" height="19.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="306-zb-bNo"/>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="xTh-q3-9rZ"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN3-KY-eht">
-                                                            <rect key="frame" x="182" y="88" width="186" height="105"/>
+                                                            <rect key="frame" x="182" y="69" width="186" height="105"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="105" id="P40-m1-hhi"/>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="kqh-Iq-tgY"/>
@@ -75,7 +75,7 @@
                                                         <constraint firstItem="zdI-Ah-bH8" firstAttribute="leading" secondItem="Mop-hB-Fvn" secondAttribute="leadingMargin" id="GlR-4i-zfp"/>
                                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="x1c-Hd-7ZT" secondAttribute="trailing" constant="5" id="Hx1-Ke-7t3"/>
                                                         <constraint firstItem="t2q-eT-6zc" firstAttribute="leading" secondItem="zdI-Ah-bH8" secondAttribute="trailing" constant="10" id="Iin-Ac-wvr"/>
-                                                        <constraint firstItem="x1c-Hd-7ZT" firstAttribute="centerY" secondItem="Mop-hB-Fvn" secondAttribute="centerY" constant="-76" id="Oox-HB-2CE"/>
+                                                        <constraint firstItem="x1c-Hd-7ZT" firstAttribute="centerY" secondItem="Mop-hB-Fvn" secondAttribute="centerY" constant="-95" id="Oox-HB-2CE"/>
                                                         <constraint firstItem="x1c-Hd-7ZT" firstAttribute="leading" secondItem="zdI-Ah-bH8" secondAttribute="trailing" constant="10" id="V3N-kA-SWq"/>
                                                         <constraint firstItem="YN3-KY-eht" firstAttribute="top" secondItem="t2q-eT-6zc" secondAttribute="bottom" constant="5" id="W74-D8-0gW"/>
                                                         <constraint firstItem="YN3-KY-eht" firstAttribute="leading" secondItem="zdI-Ah-bH8" secondAttribute="trailing" constant="10" id="d0D-c4-mZs"/>
@@ -89,6 +89,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="authorLabel" destination="t2q-eT-6zc" id="wKC-ve-siK"/>
+                                                    <outlet property="bookCoverImageView" destination="zdI-Ah-bH8" id="Jap-bK-rxV"/>
                                                     <outlet property="descriptionLabel" destination="YN3-KY-eht" id="nnO-FX-9Ao"/>
                                                     <outlet property="titleLabel" destination="x1c-Hd-7ZT" id="Vp4-hY-yJf"/>
                                                     <segue destination="K39-bG-xNv" kind="show" id="NmZ-s0-ZaF"/>
@@ -107,7 +108,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CMT-3n-fha" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4Ae-vy-1Em"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CMT-3n-fha" secondAttribute="trailing" id="T9R-aN-xMD"/>

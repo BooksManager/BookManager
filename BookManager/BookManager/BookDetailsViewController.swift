@@ -5,7 +5,10 @@
 //
 
 import UIKit
-
+import Nuke
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
 class BookDetailsViewController: UIViewController {
 
     @IBOutlet weak var coverImage: UIImageView!
@@ -48,10 +51,21 @@ class BookDetailsViewController: UIViewController {
         
         
 //        print(book.title)
+        if let path = book["imagePath"]
+        {
+            Nuke.loadImage(with: URL(string: path as! String)!, into: coverImage)
+            
+        }
         
-        titleLabel.text = book["Title"] as? String
-        authorLabel.text = book["Author"] as? String
-        descriptionLabel.text = book["Description"] as? String
+        titleLabel.text = book["title"] as? String
+        let authors = book["author"]! as! Array<String>
+        authorLabel.text = authors.joined(separator: ", ")
+        descriptionLabel.text = book["description"] as? String
+        avgRatingLabel.text = String(describing: book["rating"]!)
+        pagesLabel.text = String(describing: book["pages"]!)
+        languageLabel.text = book["lang"] as? String
+     
+    
 //        avgRatingLabel.text = String(book.averageRating)
 //        pagesLabel.text = String(book.pageCount)
 //        languageLabel.text = book.language
@@ -60,7 +74,17 @@ class BookDetailsViewController: UIViewController {
         
     }
     
-
+    @IBAction func handleRemove(_ sender: Any) {
+        let db = Firestore.firestore()
+        db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books").document(book["id"]as! String).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

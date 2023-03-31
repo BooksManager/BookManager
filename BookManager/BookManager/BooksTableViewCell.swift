@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Nuke
 
 class BooksTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var bookCoverImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -28,9 +30,18 @@ class BooksTableViewCell: UITableViewCell {
     
     /// Configures the cell's UI for the given track.
     func configure(with book: [String: Any]) {
-        titleLabel.text = book["Title"] as? String
-        authorLabel.text = book["Author"] as? String
-        descriptionLabel.text = book["Description"] as? String
+        if let path = book["imagePath"]
+        {
+            Nuke.loadImage(with: URL(string: path as! String)!, into: bookCoverImageView)
+            
+        }
+     
+        
+        titleLabel.text = book["title"] as? String
+        let authors = book["author"]! as! Array<String>
+       
+        authorLabel.text = authors.joined(separator: ", ")
+        descriptionLabel.text = book["description"] as? String
 
 ////        // Load image async via Nuke library image loading helper method
 ////        Nuke.loadImage(with: URL(string: Movie.posterBaseURLString + movie.poster_path)! , into: posterImageView)

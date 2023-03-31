@@ -21,9 +21,9 @@ class BooksViewController: UIViewController,UITableViewDataSource, UITableViewDe
         BooksTableView.dataSource = self
         BooksTableView.delegate = self
         self.BooksTableView
-            .rowHeight = 200
+            .rowHeight = 250
         
-        let ref = db.collection("Users").document("1TkF9w3QD0lp48IudQnM").collection("Books")
+        let ref = db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books")
         let res = ref.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
             if let error = error {
                 print(error.localizedDescription)

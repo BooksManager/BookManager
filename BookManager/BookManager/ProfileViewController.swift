@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var image = UIImage(named: "DefaultProfile")
+    
         profileImageView.layer.borderWidth = 1.0
         profileImageView.layer.masksToBounds = false
         profileImageView.layer.borderColor = UIColor.white.cgColor
@@ -31,7 +32,9 @@ class ProfileViewController: UIViewController {
         profileImageView.clipsToBounds = true
         NamsLabel.text = user?.displayName
         EmailLabel.text = user?.email
-        let ref = db.collection("Users").document("1TkF9w3QD0lp48IudQnM").collection("Books")
+    
+        print("User Id", user!.uid )
+        let ref = db.collection("user").document(user!.uid).collection("books")
         let res = ref.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
             if let error = error {
                 print(error.localizedDescription)
@@ -44,8 +47,8 @@ class ProfileViewController: UIViewController {
                     self.books.append(document.data())
                 }
                 for book in self.books{
-                    var tit = book["Title"] as? String
-                    self.booksName.append(tit!)
+                    var title = book["title"] as? String
+                    self.booksName.append(title!)
                 }
                 self.Titles = self.booksName.joined(separator: ", ")
 //                print(self.booksName)
