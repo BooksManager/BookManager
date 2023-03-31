@@ -23,22 +23,21 @@ class BooksViewController: UIViewController,UITableViewDataSource, UITableViewDe
         self.BooksTableView
             .rowHeight = 250
         
-        let ref = db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books")
-        let res = ref.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                
-                guard let results = querySnapshot else{
-                    return
-                }
-                for document in results.documents{
-                    self.books.append(document.data())
-                    self.BooksTableView.reloadData()
-                }
+
+        db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books").addSnapshotListener {  querySnapshot, error in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(error!)")
+                return
             }
+            var snapbooks = [[String:Any]]()
+            for document in documents{
+                snapbooks.append(document.data())
+                
+            }
+            self.books = snapbooks
+            self.BooksTableView.reloadData()
         }
-        
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
