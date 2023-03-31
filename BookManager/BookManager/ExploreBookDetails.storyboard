@@ -140,6 +140,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Add to Book Collection"/>
                                                                 <connections>
                                                                     <action selector="handleAdd:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2aP-e7-cH3"/>
+                                                                    <segue destination="aMY-Cv-ren" kind="show" id="5Rq-aV-enK"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -201,6 +202,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="20"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="23x-V6-2de">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Explore" id="aMY-Cv-ren" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2cb-7N-TdN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGJ-sR-FRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="54"/>
         </scene>
     </scenes>
     <resources>

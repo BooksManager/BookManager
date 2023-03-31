@@ -207,6 +207,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="handleRemove:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3oa-lE-Zud"/>
+                                    <segue destination="h4k-R9-ooK" kind="show" id="f3n-yM-uEz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="vH7-RA-ZXX">
@@ -292,6 +293,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+        <!--Books-->
+        <scene sceneID="hoU-gJ-H8v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Books" id="h4k-R9-ooK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fDf-f0-666"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Hm-DW-lSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="82"/>
         </scene>
     </scenes>
     <resources>
