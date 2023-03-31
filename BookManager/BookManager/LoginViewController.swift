@@ -20,7 +20,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         emailField.delegate = self;
+        emailField.layer.borderColor = UIColor.black.cgColor
         passwordField.delegate = self;
+        passwordField.layer.borderColor = UIColor.black.cgColor
     }
     
     

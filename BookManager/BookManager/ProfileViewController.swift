@@ -16,12 +16,19 @@ class ProfileViewController: UIViewController {
     var booksName = [String]()
     var Titles = String()
 
+    @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var BooksRead: UILabel!
     
     @IBOutlet weak var NamsLabel: UILabel!
     @IBOutlet weak var EmailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        var image = UIImage(named: "DefaultProfile")
+        profileImageView.layer.borderWidth = 1.0
+        profileImageView.layer.masksToBounds = false
+        profileImageView.layer.borderColor = UIColor.white.cgColor
+        profileImageView.layer.cornerRadius = (image!.size.width/2)
+        profileImageView.clipsToBounds = true
         NamsLabel.text = user?.displayName
         EmailLabel.text = user?.email
         let ref = db.collection("Users").document("1TkF9w3QD0lp48IudQnM").collection("Books")
