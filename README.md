@@ -51,14 +51,14 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 * Books CollectionPage
   - [x] As a user, I would like to be able to view my books in a list
 * Book Details
-  - [ ] As a user, I would like to be able to view information about my books
-  - [ ] As a user, I want to be able to place a book mark in the book I'm reading
-  - [ ] As a user, I want to be able to add books into my collection
-  - [ ] User can remove a book from their collection, which will delete all information regarding the book
+  - [x] As a user, I would like to be able to view information about my books
+  - [x] As a user, I want to be able to place a book mark in the book I'm reading
+  - [x] As a user, I want to be able to add books into my collection
+  - [x] User can remove a book from their collection, which will delete all information regarding the book
 * Explore page
-    - [ ] User can search for books on the search bar
-    - [ ] User can see the results of their search on the explore page
-    - [ ] User can view a detailed page of the book they select from the result
+    - [x] User can search for books on the search bar
+    - [x] User can see the results of their search on the explore page
+    - [x] User can view a detailed page of the book they select from the result
 * Profile/Settings page
    - [x] User can view their info
    - [x] User can see what they've read
