@@ -16,7 +16,7 @@ class BooksViewController: UIViewController,UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.setHidesBackButton(true, animated: true)
         
         BooksTableView.dataSource = self
         BooksTableView.delegate = self

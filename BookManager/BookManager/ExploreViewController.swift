@@ -50,6 +50,7 @@ class ExploreViewController: UIViewController, UITextFieldDelegate, UICollection
         searchBar.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self;
+        self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
     
