@@ -121,6 +121,22 @@ With so many books read also comes unused or thrown away bookmarks. Our app Book
 Login and Signup </br>
 ![](https://github.com/BooksManager/BookManager/blob/main/loginsignup.gif)
 
+[Video Walk Through](https://imgur.com/a/GW79Tzc)
+- User can sign up for an account
+- If the user key in an invalid credential, Login UI will display a warning message
+- User can log in
+- User can see their detail in the profile page
+- User can see the books they've read in the profile page
+- User can search for books in explore UI
+- User can see the detail of their search result
+- User can add the book to their collection in Explore Detail View
+- User can see all the books they've added in books collection UI
+- User can clicks onto the book in their collection to see the detail
+- User can remove the book from their collection in the Books Detail View
+- User can add a book mark to the book in their collection
+- The progress bar in the detail view will update according to the book mark
+- User can't place a book mark at a page that doesn't exist in the book 
+
 
 ## Schema 
 [This section will be completed in Unit 9]
