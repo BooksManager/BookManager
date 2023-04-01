@@ -190,6 +190,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="handleBookmark:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nw4-58-pzz"/>
+                                            <segue destination="h4k-R9-ooK" kind="show" id="50Y-QK-hiM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -322,6 +323,9 @@
             <point key="canvasLocation" x="666" y="82"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f3n-yM-uEz"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="test cover" width="3151" height="4801"/>
     </resources>
