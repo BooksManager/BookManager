@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
     var user = Firebase.Auth.auth().currentUser
     private let db = Firestore.firestore()
     var books = [[String:Any]]()
-    var booksName = [String]()
+  
     var Titles = String()
 
     @IBOutlet weak var profileImageView: UIImageView!
@@ -34,28 +34,28 @@ class ProfileViewController: UIViewController {
         EmailLabel.text = user?.email
     
         print("User Id", user!.uid )
-        let ref = db.collection("user").document(user!.uid).collection("books")
-        let res = ref.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                
-                guard let results = querySnapshot else{
-                    return
-                }
-                for document in results.documents{
-                    self.books.append(document.data())
-                }
-                for book in self.books{
-                    var title = book["title"] as? String
-                    self.booksName.append(title!)
-                }
-                self.Titles = self.booksName.joined(separator: ", ")
-//                print(self.booksName)
-                self.BooksRead.text = self.Titles
+        db.collection("user").document(user!.uid).collection("books").addSnapshotListener {  querySnapshot, error in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(error!)")
+                return
+            }
+            var snapbooks = [[String:Any]]()
+            for document in documents{
+                snapbooks.append(document.data())
                 
             }
+            self.books = snapbooks
+            var booksName = [String]()
+            for book in snapbooks{
+                var title = book["title"] as? String
+                booksName.append(title!)
+            }
+            self.Titles = booksName.joined(separator: ", ")
+
+            self.BooksRead.text = self.Titles
+            
         }
+    
         
         // Do any additional setup after loading the view.
     }
