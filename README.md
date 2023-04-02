@@ -155,7 +155,7 @@ Book
    - Gets and Updates books in profile whenever there is a change in the book data (create, update, delete)
 - Selected Books Page
    - db.collection("user").document(user!.uid).collection("books").addSnapshotListener
-   - Gets and Updates books in profile whenever there is a change in the book data (create, update, delete)
+   - Gets and Updates books in Selected books page whenever there is a change in the book data (create, update, delete)
 
 
 
