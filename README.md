@@ -141,8 +141,10 @@ Complete Work in Week 9
 
 
 ## Schema 
-[This section will be completed in Unit 9]
+![image](https://user-images.githubusercontent.com/35862858/229356119-164a0e57-a2fd-4a90-9528-fbb85a2e5ed6.jpeg)
 ### Models
+Book
+![image](https://user-images.githubusercontent.com/35862858/229356140-75804abb-3aed-4d22-88f7-5e94b02eff22.jpeg)
 [Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
