@@ -147,9 +147,15 @@ Book
 ![image](https://user-images.githubusercontent.com/35862858/229356140-75804abb-3aed-4d22-88f7-5e94b02eff22.jpeg)
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Explore Books
+   - https://www.googleapis.com/books/v1/volumes?q=intitle:TEXT_HERE
+   - Gets all text based on TEXT_HERE that is located in title of books
+- Profile Page
+   - db.collection("user").document(user!.uid).collection("books").addSnapshotListener
+   - Gets and Updates books in profile whenever there is a change in the book data (create, update, delete)
+- Selected Books Page
+   - db.collection("user").document(user!.uid).collection("books").addSnapshotListener
+   - Gets and Updates books in profile whenever there is a change in the book data (create, update, delete)
 
 
 
