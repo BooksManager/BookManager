@@ -59,7 +59,7 @@ class ExploreViewController: UIViewController, UITextFieldDelegate, UICollection
         var searchText = searchBar.text
         searchText = searchText?.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
         let url = URL(string: "https://www.googleapis.com/books/v1/volumes?q=intitle:\(searchText!)")!
-
+        print(url)
         let request = URLRequest(url: url);
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
             

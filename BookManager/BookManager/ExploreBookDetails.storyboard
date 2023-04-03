@@ -189,10 +189,12 @@
                     </view>
                     <size key="freeformSize" width="430" height="750"/>
                     <connections>
+                        <outlet property="addButton" destination="tuG-eK-UMK" id="adW-Fi-Ipi"/>
                         <outlet property="bookAuthor" destination="yrC-Ba-jUG" id="GNr-ua-Vnf"/>
                         <outlet property="bookCover" destination="Reu-jB-V5a" id="Csf-FU-iGb"/>
                         <outlet property="bookDescription" destination="yY3-RL-YTv" id="CZY-sr-YKo"/>
                         <outlet property="bookTitle" destination="FNJ-k0-EiC" id="1Q6-lO-4ad"/>
+                        <outlet property="informationView" destination="kkJ-RP-Hn9" id="BXR-wy-9qM"/>
                         <outlet property="language" destination="Nfo-x8-zl0" id="4bV-jx-7HR"/>
                         <outlet property="page" destination="Dww-Iv-Q0o" id="mRB-Jo-94B"/>
                         <outlet property="rating" destination="Rkf-bk-KB2" id="iYv-eY-mRz"/>

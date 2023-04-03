@@ -20,11 +20,17 @@ class ExploreBookDetailViewController: UIViewController {
     @IBOutlet weak var page: UILabel!
     @IBOutlet weak var language: UILabel!
     @IBOutlet weak var bookDescription: UITextView!
-    
+
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var informationView: UIView!
     
     var book:Book? = nil;
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        informationView.layer.cornerRadius = 15
+        addButton.layer.cornerRadius = 10
+        
         bookDescription.isEditable = false;
         if let book = book {
             if let path = book.volumeInfo.imageLinks?.thumbnail

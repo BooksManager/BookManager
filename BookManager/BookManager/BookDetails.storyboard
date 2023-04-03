@@ -220,11 +220,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6TS-Uq-3y7">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-km-yJT">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-km-yJT">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
                                                 <color key="backgroundColor" red="0.36470588240000001" green="0.69411764710000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="4W2-MO-CZT"/>
+                                                    <constraint firstAttribute="width" priority="100" id="8s7-lU-s2G"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

@@ -104,15 +104,20 @@ class BookDetailsViewController: UIViewController {
     }
     
     @IBAction func handleBookmark(_ sender: Any) {
-        guard let currentPage = bookmarkTextField.text else{return}
-        if(Int(currentPage)!<=book["pages"] as! Int){
-            db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books").document(book["id"]as! String).updateData([
-                "currentPage": currentPage
-            ]) { err in
-                if let err = err {
-                    print("Error updating document: \(err)")
-                } else {
-                    print("Document successfully updated")
+        
+        if let currentPage = bookmarkTextField.text {
+            let pageNumber:Int? = Int(currentPage)
+            if let page = pageNumber {
+                if(page <= book["pages"] as! Int){
+                    db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books").document(book["id"]as! String).updateData([
+                        "currentPage": currentPage
+                    ]) { err in
+                        if let err = err {
+                            print("Error updating document: \(err)")
+                        } else {
+                            print("Document successfully updated")
+                        }
+                    }
                 }
             }
         }
