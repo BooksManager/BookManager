@@ -143,9 +143,14 @@ Complete Work in Week 9
 ## Schema 
 ![image](https://user-images.githubusercontent.com/35862858/229356119-164a0e57-a2fd-4a90-9528-fbb85a2e5ed6.jpeg)
 ### Models
-Book
+ExploreDetailView: Book
 ![image](https://user-images.githubusercontent.com/35862858/229356140-75804abb-3aed-4d22-88f7-5e94b02eff22.jpeg)
-[Add table of models]
+
+Explore: Book Response
+
+<img width="378" alt="Screenshot 2023-04-03 at 12 33 16 AM" src="https://user-images.githubusercontent.com/35862858/229412353-ca250ea1-319a-434a-911e-4121df3d6b35.png">
+
+
 ### Networking
 - Explore Books
    - https://www.googleapis.com/books/v1/volumes?q=intitle:TEXT_HERE
