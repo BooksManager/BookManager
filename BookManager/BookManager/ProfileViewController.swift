@@ -23,12 +23,14 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var EmailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var image = UIImage(named: "DefaultProfile")
     
+        profileImageView.contentMode = UIView.ContentMode.scaleAspectFill
         profileImageView.layer.borderWidth = 1.0
         profileImageView.layer.masksToBounds = false
         profileImageView.layer.borderColor = UIColor.white.cgColor
-        profileImageView.layer.cornerRadius = (image!.size.width/2)
+        profileImageView.layer.cornerRadius = (profileImageView.frame.size.height/2 )-10
+        print(profileImageView.frame.size.height)
+        print(profileImageView.frame.size.width)
         profileImageView.clipsToBounds = true
         NamsLabel.text = user?.displayName
         EmailLabel.text = user?.email
