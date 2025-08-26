@@ -33,6 +33,8 @@ class BookDetailsViewController: UIViewController {
     
     @IBOutlet weak var bookmarkTextField: UITextField!
     
+    var progressWidthAnchor: NSLayoutConstraint? = nil
+    
     var book: [String:Any] = [:]
 
     let db = Firestore.firestore()
@@ -57,7 +59,8 @@ class BookDetailsViewController: UIViewController {
             let CP = currentPage as! String
             let FCP = CGFloat(Int(CP)!)
             progress = FCP/CGFloat(TP)
-            progressBar.widthAnchor.constraint(equalToConstant: 360*progress).isActive = true
+            self.progressWidthAnchor = progressBar.widthAnchor.constraint(equalToConstant: 360*progress)
+            self.progressWidthAnchor?.isActive = true
             print(CP, FCP, TP, progress)
         }
         else
@@ -65,7 +68,9 @@ class BookDetailsViewController: UIViewController {
             let TP = book["pages"] as! Int
             progress = CGFloat(0)/CGFloat(TP)
             print("No Pages", TP, progress)
-            progressBar.widthAnchor.constraint(equalToConstant: 360*progress).isActive = true
+            self.progressWidthAnchor = progressBar.widthAnchor.constraint(equalToConstant: 360*progress)
+            self.progressWidthAnchor?.isActive = true
+
         }
         
         
@@ -76,9 +81,9 @@ class BookDetailsViewController: UIViewController {
             
         }
         
-        titleLabel.text = book["title"] as? String
+        self.title = (book["title"] as? String)!
         let authors = book["author"]! as! Array<String>
-        authorLabel.text = authors.joined(separator: ", ")
+        authorLabel.text = "By: " + authors.joined(separator: ", ")
         descriptionLabel.text = book["description"] as? String
         avgRatingLabel.text = String(describing: book["rating"]!)
         pagesLabel.text = String(describing: book["pages"]!)
@@ -111,21 +116,18 @@ class BookDetailsViewController: UIViewController {
                 if(page <= book["pages"] as! Int){
                     db.collection("user").document(Firebase.Auth.auth().currentUser!.uid).collection("books").document(book["id"]as! String).updateData([
                         "currentPage": currentPage
-                    ]) { err in
+                    ]) { [weak self] err in
                         if let err = err {
                             print("Error updating document: \(err)")
                         } else {
+                            self?.book["currentPage"] = "\(page)"
+                            self?.updateProgress()
                             print("Document successfully updated")
                         }
                     }
                 }
             }
         }
-        
-  
-        
-       
-        
         
     }
     @IBAction func handleRemove(_ sender: Any) {
@@ -134,21 +136,33 @@ class BookDetailsViewController: UIViewController {
             if let err = err {
                 print("Error removing document: \(err)")
             } else {
+                self.navigationController?.popViewController(animated: true)
                 print("Document successfully removed!")
             }
         }
     }
     
-    /*
-    // MARK: - Navigation
+    func updateProgress() {
+        var progress = CGFloat(1)
+        if let currentPage = book["currentPage"] {
+            let TP = book["pages"] as! Int
+            let CP = currentPage as! String
+            let FCP = CGFloat(Int(CP)!)
+            progress = FCP / CGFloat(TP)
+            print(CP, FCP, TP, progress)
+            currentPageLabel.text = String(describing: currentPage)
+        } else {
+            let TP = book["pages"] as! Int
+            progress = 0
+            print("No Pages", TP, progress)
+            currentPageLabel.text = "0"
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Animate the width change
+        progressWidthAnchor?.constant = 360 * progress
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+
     }
-    */
-    
-    
-
 }

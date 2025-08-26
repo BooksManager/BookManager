@@ -59,7 +59,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         Firebase.Auth.auth().createUser(withEmail: email, password: password) {result, error in
             if error != nil {
                 let alert = UIAlertController(title: "Login Error",
-                                              message: "Incorrect email or password",
+                                              message: "Email already exists",
                                               preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK",
                                               style: .default,
@@ -68,7 +68,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                 }))
                 self.present(alert, animated: true, completion: nil);
             }
-            
+            print(error)
             guard let res = result else {
                 print("Error occurred while logging in");
                 return;

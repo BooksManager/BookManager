@@ -41,7 +41,7 @@ class ExploreBookDetailViewController: UIViewController {
                 bookTitle.text = title
             }
             if let author = book.volumeInfo.authors {
-                bookAuthor.text = author[0]
+                bookAuthor.text = "By: " + author.joined(separator: ", ")
             }
             if let rating = book.volumeInfo.averageRating {
                 self.rating.text = String(describing: rating)
@@ -115,6 +115,7 @@ class ExploreBookDetailViewController: UIViewController {
                 print(e.localizedDescription)
                 return
             }
+            self.navigationController?.popViewController(animated: true)
             print("Post Written!!!")
         }
         }
