@@ -68,7 +68,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                 }))
                 self.present(alert, animated: true, completion: nil);
             }
-            print(error)
+            print(error as Any)
             guard let res = result else {
                 print("Error occurred while logging in");
                 return;

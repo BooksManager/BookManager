@@ -49,7 +49,7 @@ class ProfileViewController: UIViewController {
             self.books = snapbooks
             var booksName = [String]()
             for book in snapbooks{
-                var title = book["title"] as? String
+                let title = book["title"] as? String
                 booksName.append(title!)
             }
             self.Titles = booksName.joined(separator: ", ")

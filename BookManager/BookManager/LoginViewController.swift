@@ -58,7 +58,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 return;
             }
             
-            print("Signed in as \(res.user.email)");
+            print("Signed in as \(String(describing: res.user.email))");
             NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
             
         }
